@@ -1,0 +1,47 @@
+*{ 
+   margin:0;
+   padding: 0; 
+   box-sizing: border-box;
+ }
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(73, 71, 71);
+    color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+}
+.caixa{    
+    background: rgb(206, 235, 247);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 12%;
+}
+ 
+.grupo-input {
+    margin-bottom: 15px;
+}
+ 
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px; 
+} 
+.grupo-input { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px seagreen; 
+    border-radius: 15px; 
+    outline: none; 
+    transition: 0.2s; 
+} 
+.grupo-input:focus{ 
+    border-color: brown; 
+} 
+.input-erro{ 
+    border-color: blueviolet; 
+} 
+.input-sucesso{ 
+    border-color: red; 
+}
