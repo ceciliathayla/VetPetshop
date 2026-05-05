@@ -7,15 +7,15 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(255, 255, 255);
-    color: rgb(10, 10, 10);
+    color: rgb(107, 6, 102);
     display: flex;
     justify-content: center;
 }
 .caixa{    
-    background: rgb(212, 245, 245);
+    background: rgb(245, 210, 242);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgb(241, 129, 232);
     position: relative;
     margin-top: 12%;
 }
@@ -37,11 +37,11 @@ body{
     transition: 0.2s; 
 } 
 .grupo-input:focus{ 
-    border-color: brown; 
+    border-color: rgb(248, 147, 218); 
 } 
 .input-erro{ 
-    border-color: blueviolet; 
+    border-color: rgb(241, 175, 236); 
 } 
 .input-sucesso{ 
-    border-color: red; 
+    border-color: rgb(240, 156, 240); 
 }
