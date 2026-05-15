@@ -1,47 +1,35 @@
-*{ 
-   margin:0;
-   padding: 0; 
-   box-sizing: border-box;
- }
+.grupo-input input:focus { 
+    border-color: rgb(107, 6, 102); 
+    box-shadow: 0 0 5px rgba(107, 6, 102, 0.2);
+} 
 
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: rgb(105, 11, 97);
-    display: flex;
-    justify-content: center;
-}
-.caixa{    
-    background: rgb(241, 203, 223);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgb(247, 145, 198);
-    position: relative;
-    margin-top: 12%;
-}
- 
-.grupo-input {
-    margin-bottom: 15px;
-}
- 
-.grupo-input label {
+/* Estilo para o Botão */
+.botao-primario {
     display: block;
-    margin-bottom: 5px; 
-} 
-.grupo-input { 
-    width: 100%; 
-    padding: 10px; 
-    border: 1px seagreen; 
-    border-radius: 15px; 
-    outline: none; 
-    transition: 0.2s; 
-} 
-.grupo-input:focus{ 
-    border-color: brown; 
-} 
-.input-erro{ 
-    border-color: blueviolet; 
-} 
-.input-sucesso{ 
-    border-color: red; 
+    margin: 20px auto 0; /* Centraliza o botão */
+    padding: 12px; 
+    border-radius: 25px; /* Deixa o botão redondo */
+    border: none;
+    background-color: rgb(107, 6, 102); /* Cor roxa para combinar */
+    color: rgb(243, 218, 218);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.botao-primario:hover {
+    background-color: rgb(147, 16, 142);
+    transform: scale(1.02); /* Leve efeito de aumentar ao passar o mouse */
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #eccdcd;
+    color: rgb(167, 59, 118);
+    
+    /* Flexbox para centralizar */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;       /* Faz o body ter a altura da tela inteira */
+    margin: 0;
 }

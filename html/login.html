@@ -1,40 +1,33 @@
-<!DOCTYPE html>
- <html lang="en">
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/login.css"
+    <link rel="stylesheet" href="../css/login.css"> 
+</head>
 
- </head>
+<body>
+    <div class="caixa" style="width:320px;">
+        <h2 style="text-align:center; margin-bottom: 20px;">Login</h2>
 
+        <form>
+            <div class="grupo-input">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" required>
+            </div>
 
- <body>
-        <div class="caixa" style="width:320px";>
-            <h2 style="text-align:center;">Login</h2>
+            <div class="grupo-input">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
 
-            <form>
-                <div class="grupo-input">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite seu email"required>
-                </div>
+            <div class="grupo-input">
+                <label for="senha-rep">Repita a Senha</label>
+                <input type="password" id="senha-rep" placeholder="Repita a senha" required>
+            </div>
 
-                <div class="grupo-input">
-                    <label for="senha">Senha</label>
-                    <input type="senha" id="Senha" placeholder="Digite sua senha"required>
-                </div>
-
-                <div class="grupo-input">
-                    <label for="senha-rep">Repita a Senha</label>
-                    <input type="senha" id="Senha" placeholder="Repita a senha"required>
-                </div>
-
-                <button type="submit" class="botao-primario" style="width: 200px;">
+            <button type="submit" class="botao-primario" style="width: 200px;">
                 Logar
-                </button>
-
-            </form>
-        </div>
- </body>
-
- </html>
+            </button>
+        </form>
+    </div>
+</body>

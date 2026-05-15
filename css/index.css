@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f5bccd; /* Um fundo levemente rosado para combinar */
+    background-color: #ffffff; /* Um fundo levemente rosado para combinar */
     color: #333;
 }
 
@@ -120,4 +120,25 @@ body {
     width: 100%;
     height: 250px;
     background-color: #f1e3e8;
+    overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* A mágica para a foto não esticar */
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+    object-position: center; /* Centraliza a parte principal da foto */
+    display: block;
+}
+
+/* Ajuste no texto do card para não ficar colado na foto */
+.card h3 {
+    padding: 15px;
+    text-align: center;
+    color: #680448;
+    font-size: 1.1rem;
 }

@@ -1,0 +1,90 @@
+/* Container do Carrinho */
+.carrinho-container {
+    position: fixed;
+    top: 0;
+    right: 0; /* Mude para -400px para esconder */
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(238, 217, 229); /* Rosa de fundo da loja */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px 0 15px rgba(180, 131, 131, 0.1);
+    z-index: 9999;
+}
+
+/* Título "Seu Carrinho" com cor e fundo */
+.titulo-carrinho {
+    background-color: rgb(245, 177, 224); /* Rosa do topo da loja */
+    color: rgb(197, 16, 91) !important; /* Cor do texto forte */
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgb(71, 5, 5);
+}
+
+/* Card do Item Branco e Redondinho */
+.item-no-carrinho {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 25px; /* Bordas bem redondas */
+    border: 2px solid rgb(202, 130, 224);
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-no-carrinho img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+/* Textos do Produto */
+.nome-item { color: rgb(197, 16, 91); margin-bottom: 5px; }
+.preco-item { font-weight: bold; color: #333; }
+
+/* Botão FINALIZAR COMPRA (Gordinho e Colorido) */
+.btn-finalizar {
+    background-color: rgb(197, 16, 91) !important; /* Rosa Choque */
+    color: white !important;
+    border: none;
+    padding: 15px;
+    border-radius: 30px; /* Estilo pílula */
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: rgb(245, 177, 224) !important;
+    transform: scale(1.02);
+}
+
+/* Botão Continuar Comprando */
+.btn-voltar {
+    background-color: white;
+    color: rgb(197, 16, 91);
+    border: 2px solid rgb(197, 16, 91);
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Input de quantidade */
+.input-qtd {
+    border: 1px solid rgb(202, 130, 224);
+    border-radius: 10px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
