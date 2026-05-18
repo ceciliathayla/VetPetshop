@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ffffff; /* Um fundo levemente rosado para combinar */
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -23,9 +23,27 @@ body {
     z-index: 1000;
 }
 
-/* --- O SEGREDO DA LOGO AQUI --- */
+/* Alinhamento do nome e logo à esquerda */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.brand-name {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
 .logo-img {
-    height: 80px; /* Ajuste este valor para diminuir ou aumentar */
+    height: 60px; /* Reduzido levemente para o nome caber harmônico ao lado */
     width: auto;
     display: block;
     transition: transform 0.3s;
@@ -66,7 +84,7 @@ body {
     padding: 8px 12px;
     border: 1px solid #e975bb;
     background-color: #f8e6f0;
-    border-radius: 20px 0 0 20px; /* Bordas arredondadas ficam mais femininas */
+    border-radius: 20px 0 0 20px;
     outline: none;
 }
 
@@ -116,26 +134,27 @@ body {
     transform: translateY(-10px);
 }
 
+/* Ajustado para 380px no CSS também para os cards vazios acompanharem */
 .card-image {
     width: 100%;
-    height: 250px;
+    height: 380px;
     background-color: #f1e3e8;
-    overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-/* A mágica para a foto não esticar */
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
-    object-position: center; /* Centraliza a parte principal da foto */
+    object-fit: cover;
+    object-position: center top;
     display: block;
 }
 
-/* Ajuste no texto do card para não ficar colado na foto */
+/* Ajuste no texto do card */
 .card h3 {
     padding: 15px;
     text-align: center;
